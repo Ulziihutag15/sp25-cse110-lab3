@@ -1,1 +1,14 @@
 Fill in the passphrases here.
+
+7: SofiaWasHere
+1: WongAvery
+9: 2020_sucked
+4: JavaScriptRocks
+5: ShraviBeatsReact
+3: HTMLRules
+12: iHeartWebDev
+11: ElaineFirst
+2: iHateC++
+8: coolcoolcool3x
+6: ThisIsJSyay
+10: png
