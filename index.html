@@ -4,21 +4,36 @@
     <title>Meeting minutes</title>
     <meta charset="utf-8"/>
     <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+      .name{
+        color: hsl(300, 100%, 50%);
+      }
+      .date{
+        color: hsla(200, 100%, 50%, 0.8);
+      }
+      .icon{
+        color: color(display-p3 1 0.9 0.1);
+      }
+      .intro{
+        color: color-mix(in srgb, red 60%, blue 40%);
+      }
+    </style>
   </head>
   <body>
     <header>
-        <h1>Meeting Minute</h1>
+        <h1 style="color: rgba(100,0,0,0.8)">Meeting Minute</h1>
     </header>
 
     <main>
-        <h2>Key ideas discussed</h2>
+        <h2 class="ideas">Key ideas discussed</h2>
         <nav>
             <ul>
-              <li><div>The name of team</div></li>
-              <li><div>The date, on which the team will meet up</div></li>
-              <li><div>Creating a GitHub repository</div></li>
-              <li><div>Website icon</div></li>
-              <li><div>Team intro</div></li>
+              <li><div class="name">The name of team</div></li>
+              <li><div class="date">The date, on which the team will meet up</div></li>
+              <li><div style="color: orange">Creating a GitHub repository</div></li>
+              <li><div class="icon">Website icon</div></li>
+              <li><div class="intro">Team intro</div></li>
             </ul>
         </nav>
 
