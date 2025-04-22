@@ -1,6 +1,148 @@
-body{
-    background-color: rgb(100, 100, 100);
+:root {
+  --primary-color: cyan;
 }
-.ideas{
-    color: #afaf
+* {
+  box-sizing: border-box;
+}
+#one-idea {
+  color: orange;
+}
+.team-name {
+  width: 80%;
+  background-color: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-style: groove;
+  border-color: darkblue;
+  border-width: 2px;
+  border-radius: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("fonts/WinkyRough-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  background-color: rgb(100, 100, 100);
+  font-family: "MyCustomFont";
+}
+
+.ideas {
+  color: #afaf;
+}
+.ideas-section {
+  background-color: lightpink;
+  width: 80%;
+  padding: 10px 20px 30px 40px;
+  border: 3px solid black;
+  margin: 10px 10px 10px 10px;
+  display: block;
+}
+.relative-box {
+  min-width: 200px;
+  max-width: 1000px;
+  width: 80%;
+  padding: 2em;
+  margin-bottom: 2rem;
+  background-color: lightblue;
+}
+
+.absolute-box {
+  width: 80%;
+  height: 5cm;
+  padding: 10pt;
+  background-color: lightcoral;
+  color: white;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .absolute-box {
+    width: 80%;
+    background-color: lightgreen;
+  }
+}
+
+h3,
+.date {
+  font-style: italic;
+}
+
+section:has(> img) {
+  border: 2px solid purple;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+h3.date {
+  font-size: 2rem;
+}
+i ~ em {
+  font-size: 2rem;
+  color: bisque;
+}
+b + strong {
+  color: steelblue;
+}
+ol > li {
+  list-style: square;
+  color: darkgreen;
+}
+.absolute-box p {
+  color: deeppink;
+}
+button {
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: teal;
+}
+
+p[target="tName"] {
+  color: brown;
+}
+button:active {
+  background-color: yellowgreen;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid {
+  display: grid;
+  background-color: blueviolet;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  column-gap: 100px;
+}
+
+@layer components {
+  li {
+    gap: 10px;
+
+    div {
+      font-size: 2rem;
+    }
+
+    div:hover {
+      text-decoration: underline;
+    }
+  }
 }

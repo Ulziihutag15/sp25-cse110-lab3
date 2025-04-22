@@ -3,6 +3,7 @@
   <head>
     <title>Meeting minutes</title>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico"/>
     <link rel="stylesheet" href="./style.css"/>
     <style>
@@ -26,27 +27,28 @@
     </header>
 
     <main>
+      <section class="ideas-section">
         <h2 class="ideas">Key ideas discussed</h2>
         <nav>
-            <ul>
+            <ul class="ul">
               <li><div class="name">The name of team</div></li>
               <li><div class="date">The date, on which the team will meet up</div></li>
-              <li><div style="color: orange">Creating a GitHub repository</div></li>
+              <li><div id="one-idea">Creating a GitHub repository</div></li>
               <li><div class="icon">Website icon</div></li>
               <li><div class="intro">Team intro</div></li>
             </ul>
         </nav>
+      </section>
+        <section class="team-name">
+            <h3 style="text-decoration: underline; text-align: center">The name of team:</h3>
 
-        <section>
-            <h3>The name of team:</h3>
-
-            <p>Powell Rangers</p>
+            <p target="tName">Powell Rangers</p>
         </section>
 
         <hr>
 
-        <section>
-            <h3>Meeting Date:</h3>
+        <section class="relative-box">
+            <h3 class="date">Meeting Date:</h3>
             <ol>
                 <li>Sunday, 8pm</li>
                 <li>Thursday, 9pm</li>          
@@ -55,7 +57,7 @@
 
         <hr>
 
-        <section>
+        <section class="absolute-box">
             <h3>Creating a GitHub repository:</h3>
             <p>https://github.com/cse110-sp25-group28/cse110-sp25-group28</p>
         </section>
@@ -63,16 +65,16 @@
         <hr>
 
         <section>
-          <h3>Website Icon</h3>
+          <h3 style="display: none">Website Icon</h3>
           <img alt="favicon" src="favicon.ico"/>
         </section>
 
         <hr>
 
-        <section>
-          <h3>Team intro</h3>
+        <section style="display: inline; position: relative;">
+          <h3 style="color: aquamarine">Team intro</h3>
 
-          <video width="320" height="240" controls>
+          <video width="320" height="240" style="position: static">
             <source src="teamintro.mp4" type="video/mp4">
 
           </video>
@@ -87,11 +89,11 @@
     </main>
 
     <footer>
+      <div style="display: flex; flex-direction: column;">
         <b>The meeting lasted 30 minutes</b>
-        <br/>
         <strong>Topics for next meeting</strong>
-
-        <ul>
+      </div>
+        <ul class="grid">
           <li><a>Project Topic</a></li>
           <li><a>Start the project</a></li>
         </ul>
@@ -108,7 +110,7 @@
 
 
         <h1>The form element</h1>
-          <form action="/action_page.php">
+          <form action="/action_page.php" class="form">
             <textarea id="w3review" name="w3review" rows="4" cols="50">Textarea</textarea>
             <br/>
             <fieldset>
